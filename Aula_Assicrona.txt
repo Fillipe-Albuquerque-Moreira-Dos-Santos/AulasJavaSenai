@@ -25,29 +25,29 @@ public class AulaAssicrona {
 			voto = sc.nextInt();
 		}
 
-		while (voto == 1 && voto == 2 && voto == 3 && voto == 4);
+		while (voto >= 1 && voto <= 5);
 		{
 
 			if (voto == 1) {
-				voto = LulaMolusculo++;
+				LulaMolusculo++;
 				System.out.println(" Lula Molusculo recebeu " + LulaMolusculo);
 
 			}
 
 			if (voto == 2) {
-				voto = Bolso_Nelson++;
+				Bolso_Nelson++;
 				System.out.println(" Bolso Nelson recebeu " + Bolso_Nelson);
 
 			}
 
 			if (voto == 3) {
-				voto = CiloucaGomes++;
+				CiloucaGomes++;
 				System.out.println(" Cilouca Gomes " + CiloucaGomes);
 
 			}
 
 			if (voto == 4) {
-				voto = BolosBolinho++;
+				 BolosBolinho++;
 				System.out.println(" Bolso Bolinho recebeu " + BolosBolinho);
 
 			}
