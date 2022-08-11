@@ -2,7 +2,7 @@ package entities;
 
 public class Carro {
 
-	private String ano;
+	private int ano;
 	private String modelo;
 	private String cor;
 	private String tipo;
@@ -31,12 +31,17 @@ public class Carro {
 
 	}
 
-	public String getAno() {
+	public int getAno() {
 		return ano;
 	}
 
-	public void setAno(String ano) {
-		this.ano = ano;
+	public void setAno(int ano) throws Exception {
+		if (ano >= 2019) {
+			this.ano = ano;
+		}else {
+			throw new Exception ("Não pode ser efetuado cadastro, carro com ano incompativel, so aceitamos carro com menos de 3 anos de uso");
+		}
+	
 	}
 
 	public String getModelo() {
@@ -87,7 +92,7 @@ public class Carro {
 	@Override
 	public String toString() {
 
-		return "Ano do carro: " + ano + "\nModelo do carro: " + modelo + "\nCor do carro: " + cor + "\nTpo do carro: "
+		return "Ano do carro: " + ano + "\nModelo do carro: " + modelo + "\nCor do carro: " + cor + "\nTipo do carro: "
 				+ tipo + "\nValor do carro: " + valor + "\nSituação do carro: " + situacao
 				+ "\nQuantidade de Carros Atualizado: " + ValorTotalEmEstoque();
 	}
