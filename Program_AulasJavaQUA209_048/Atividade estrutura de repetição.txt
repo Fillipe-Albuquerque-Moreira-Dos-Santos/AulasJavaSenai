@@ -1,0 +1,233 @@
+package aulas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Estrutura {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+
+		int nota = 0;
+		do {
+			System.out.println("Digite uma nota de zero a dez");
+			nota = sc.nextInt();
+			if (nota > 10) {
+				System.out.println("Erro! Nota invalida!");
+			}
+		} while (nota >= 10);
+
+		System.out.println("------------------------------------");
+		System.out.println("Parabéns a nota digitada foi válida");
+		System.out.println("------------------------------------");
+
+		sc.close();
+	}
+
+}
+-----------------------------------------------------------------------------------------------
+
+Exercicio 2
+
+package aulas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Estrutura {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+
+		String Login;
+		String Senha;
+
+		System.out.println("Informe seu Login");
+		Login = sc.nextLine();
+		sc.nextLine();
+		System.out.println("Informe sua Senha");
+		Senha = sc.nextLine();
+
+		while (Login.equals(Senha)) {
+			System.out.println("\nOlogin e senha devem ser diferentes ");
+			System.out.println("\nInsira o Login do usuário ");
+			Login = sc.nextLine();
+			System.out.print("Insira a sua senha");
+			Senha = sc.nextLine();
+		}
+
+		System.out.println("Login: " + Login + "\nSenha: " + Senha);
+
+		sc.close();
+	}
+
+}
+-------------------------------------------------------------------------------------------------------
+
+Exercicio 3
+
+Validação NOME
+
+package aulas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Estrutura {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+
+		String nome;
+
+		while (true) {
+
+			System.out.print("Informe seu nome: ");
+
+			nome = sc.nextLine();
+
+			if (nome.length() > 3) {
+
+				break;
+
+			} else {
+
+				System.out.println("O nome precisa ser maior de 3 caracteres!");
+
+			}
+
+		}
+
+		sc.close();
+	}
+
+}
+---------------------------------------------------------------------------------------------------------
+
+Validação IDADE
+
+package aulas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Estrutura {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub]
+		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+
+		int Idade;
+
+		while (true) {
+
+			System.out.println("Informe sua idade: ");
+
+			Idade = sc.nextInt();
+
+			if (Idade > 0 && Idade <= 150) {
+				System.out.println("A idade digitada foi  válida!");
+
+				break;
+
+			} else {
+
+				System.out.println("A idade precisa estar entre 0 e 150 anos!");
+
+			}
+
+		}
+
+		sc.close();
+	}
+
+}
+---------------------------------------------------------------------------------------------------------
+
+Validação Salário
+
+package aulas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Estrutura {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub]
+		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+
+		double salario;
+
+		 while(true){
+
+	           System.out.println("Informe seu salário: ");
+
+	           salario = sc.nextFloat();
+
+	           if (salario > 0){
+
+	               break;
+
+	           }else{
+
+	               System.out.println("O salário precisa ser maior que 0!");
+
+	           }
+
+	       }
+
+		sc.close();
+	}
+
+}
+
+--------------------------------------------------------------------------------------------------------------
+
+Validação Sexo
+
+package aulas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Estrutura {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub]
+		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+
+		char sexo;
+
+		while(true){
+
+	           System.out.print("Informe seu sexo[M/F]: ");
+
+	           sexo = sc.next().charAt(0);
+
+	           if (sexo == 'M' || sexo == 'F'){
+
+	               break;
+
+	           }else{
+
+	               System.out.println("O nome precisa ser 'M' ou 'F'!");
+
+	           }
+
+	       }
+
+		sc.close();
+	}
+
+}
+
+
+
+
+
+
+
