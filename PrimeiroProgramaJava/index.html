@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index.html</title>
+</head>
+
+<body>
+    <table border="3" style="text-align:center;">
+        <tr>
+            <th colspan="5"> Faculdade de Inovação e Tecnologia Senac</th>
+        </tr>
+        <tr>
+            <th>Alunos</th>
+            <td>Fillipe Albuquerque</td>
+            <td>Deibson Pereira</td>
+            <td>João Lucas</td>
+            <td>Davi Emanuel</td>
+        </tr>
+    </table>
+
+    <h2>Atividades:</h2>
+    <br>
+
+    <ol>
+        <b>
+            <li type="A">Na tag < input> com atributo type="text", para que serve o atributo "placeholder"?
+            </li>
+        </b>
+        <p>O atributo placeholder é uma pequena frase ou palavra, que tem o intuito de ajudar usuários a entender como
+            devem preencher determinado formulário, inserindo um texto contextual no campo a ser respondido</p>
+        <form>
+            <input type="text" name="Nome" value="" placeholder="Seu nome">
+        </form>
+        <b>
+            <li type="A">Na tag < input> com atributo type="radio" ou type="radio", para que serve o atributo "checked"?
+            </li>
+        </b>
+        <p>O checked atributo é um atributo booleano. Quando presente, ele especifica que um < input> elemento deve ser
+                pré-selecionada (marcada), quando a página é carregada. O checked atributo pode ser usado com < input
+                    type="checkbox"> e < input type="radio"> .</p>
+        <form action="demo_form.asp">
+            <input type="checkbox" name="Veículo" value="Carro" checked> Eu tenho um carro
+        </form>
+        <b>
+            <li type="A">Na tag < input> para que serve o atributo "value"?
+            </li>
+        </b>
+        <p>O que faz o atributo value no HTML?
+            O value é a informação que será enviado pro servidor, pode ser usado 1, 2, f, m, masculino, feminino etc.
+            Então quem vai receber essa informação é quem definiu o value. </p>
+        <b>
+            <li type="A">Que atributo deve ser utilizado para agrupar vários botões de rádio em um formulário de modo
+                que apenas um deles fique marcado de cada vez?
+            </li>
+        </b>
+        <p>A tag < button>
+
+                O HTML Button pode ser definido como um atributo pela tag de abertura < button> e a tag de fechamento <
+                        /button>. Dentro de um elemento < button>, você pode colocar conteúdo, como texto ou imagens.
+        </p>
+
+        <button name="button"> Clique aqui </button>
+        <button name="button"> Clique aqui </button>
+        <button name="button"> Clique aqui </button>
+        <b>
+            <li type="A">Para que serve a tag < label>? Para que serve o atributo "for" nessa tag?
+            </li>
+        </b>
+        <p>A tag label é útil no trabalho com formulários. Ela especifica qual o "rótulo" do input (a que se refere o
+            input), e ajuda na experiência do usuário durante a utilização e preenchimento do formulário.
+            O atributo for faz um tipo de link entre a label e o input . Logo o for tem que apontar para o ID do input .
+        </p>
+        <label for="user">Clique aqui</label>
+        <input type="text" id="user" name="name">
+        <b>
+            <li type="A">Na tag < option> para que serve o atributo "selected"?
+            </li>
+        </b>
+        <p>Como usar a tag option no HTML?
+            Em um formulário Web, o elemento HTML < option> é usado para criar um controle que representa um item dentro
+                de um elemento HTML5 < select> , < optgroup> ou < datalist>
+                            Se presente, este atributo booleano indica que a opção está selecionada inicialmente. Se o
+                            elemento < option> for descendente de um elemento < select> cujo atributo multiple não está
+                                    definido, apenas um único < option> deste elemento < select> pode ter o atributo
+                                            selected.
+        </p>
+        <select name="select">
+            <option value="valor1">Valor 1</option>
+            <option value="valor2" selected>Valor 2</option>
+            <option value="valor3">Valor 3</option>
+        </select>
+        <b>
+            <li type="A">Nas tags de formulário para que serve o atributo "required"?
+            </li>
+        </b>
+        <p>Esse é um atributo booleano usado para indicar que um determinando campo de formulário é obrigatório para o
+            envio do mesmo. Ao adicionar esse atributo a um campo de formulário, o navegador obriga o usuário a inserir
+            dados naquele campo antes de enviar o formulário.
+        </p>
+        <form action="post">
+            <label for="firsname">Primeiro Nome:</label>
+            <input id="firstname" type="text" aria-required="true">
+            <br>
+            <label for="lastname">Ultimo Nome:</label>
+            <input id="lastname" type="text" aria-required="true">
+        </form>
+        <b>
+            <li type="A">Na tag < form> para que serve o atributo "action"?
+            </li>
+        </b>
+        <p>O URI de um programa que processa as inofrmações por meio do formulário. Esse valor pode ser substituído por
+            um atributo "formaction" em um elemento < buttom> ou < imput>
+                    </imput>
+                    </buttom>
+        </p>
+        <form action="">
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name">
+            <input type="submit" value="Save">
+        </form>
+        <b>
+            <li type="A">Na tag < form> para que serve o atributo "method"?
+            </li>
+        </b>
+        <p>O atributo method define o método HTTP com que o formulário HTML irá lidar com os dados recebidos. São eles:
+            o método GET e o método POST.
+        </p>
+        <form action="" method="get">
+            <label for="GET-name">Name:</label>
+            <input id="GET-name" type="text" name="name">
+            <input type="submit" value="Save">
+        </form>
+        <form action="" method="post">
+            <label for="POST-name">Name:</label>
+            <input id="POST-name" type="text" name="name">
+            <input type="submit" value="Save">
+        </form>
+        <b>
+            <li type="A">Para que o valor digitado de uma senha não apareça na barra de endereços do navegador, qual
+                deve ser o valor do atributo "method" na tag < form>?
+            </li>
+        </b>
+        <p>O método GET é usado pelo navegador para solicitar que o servidor envie de volta um determinado recurso.
+            Portanto, é como se falássemos ao servidor “Servidor, eu quero obter este recurso.”. Nesse caso, o navegador
+            envia um corpo vazio. Portanto, já que o corpo fica vazio, se um formulário for enviado através do método
+            GET, os dados serão reconhecidos pelo servidor através da URL.</p>
+        <b>
+            <li type="A">Qual valor deve ser informado no atributo "method" na tag < form> em um formulário que será
+                    usado para fazer upload de arquivos?
+            </li>
+        </b>
+        <p> O método POST é utilizado no navegador para conversar com o servidor. Os dados são enviados ao servidor
+            através do corpo da solicitação HTTP. Também é realizada uma solicitação de resposta. Portanto, é como se
+            falássemos ao servidor “Servidor, verifique esses dados e me retorne um resultado adequado”. Dessa forma, ao
+            enviar um formulário através do método POST, os dados serão anexados ao corpo da solicitação
+            HTTP.Diferentemente do método GET, explicado anteriormente, o método POST não inclui o corpo na URL.
+            Portanto, os dados enviados não ficarão visíveis na URL.
+        </p>
+    </ol>
+    <h2>Link do Formulário</h2>
+
+    <a href="formulario.html">Formulário</a>
+</body>
+
+</html>
