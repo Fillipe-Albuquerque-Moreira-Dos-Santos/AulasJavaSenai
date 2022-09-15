@@ -1,5 +1,4 @@
-   
-   #Desenvolvedor Java
+   # Desenvolvedor Java
    <li style="list-style-type: none;">
 <ul style="list-style-type: circle;">
 <li style="text-align: justify;">Unidade I - Lógica de Programação
